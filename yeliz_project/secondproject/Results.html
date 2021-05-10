@@ -1,0 +1,14 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Result for round 2{% endblock %}
+
+{% block content %}
+Number of correct answers are {{ correct_ans_result }}, number of wrong answers are {{ wrong_ans_result }}
+Your total earnings are {{ combined_payoff }}
+
+{{ formfields }}
+
+{{ next_button }}
+
+{% endblock %}
